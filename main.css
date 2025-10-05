@@ -1,0 +1,45 @@
+@font-face {
+    src: url(fonts/Oswald-VariableFont_wght.ttf); /*สำหรับใส่ฟอนของตัวเอง*/
+    font-family: Oswald-VariableFont;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(27, 27, 31);
+    color: aliceblue;
+}
+
+*{
+    margin: 10px;
+    padding: 1px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border : none;
+    outline: none;
+    font-family: Oswald-VariableFont;
+}
+
+div{
+    font-size: 24px;
+}
+
+#name{
+    font-size: 30px;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2,h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+
+img{
+    width: 10%;
+    height: auto;
+}
