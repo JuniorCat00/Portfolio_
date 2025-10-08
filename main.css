@@ -23,11 +23,37 @@ div{
     font-size: 24px;
 }
 
+.Header, h4{
+    text-align: center;
+    font-size: 60px;
+}
+
+button{
+    font-size: 25px;
+}
+
+.profile_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 25px;
+    padding: 100px;
+
+}
+  
+.profile_img #thanapt_profile{
+    width: 25%;
+    height: auto;
+    float: right;
+    border-radius: 25% 10%;
+}
+
 #name{
     font-size: 30px;
 }
 
-h1,h4{
+h1{
     font-size: 32px;
 }
 
