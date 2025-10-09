@@ -180,6 +180,21 @@ img{
     border-radius: 10px;
 }
 
+.Web_Project{
+    grid-column: 1 /span 3;
+    border-radius: 10px;
+}
+
+#assignment{
+    width: auto;
+    height: 10%;
+}
+
+#Project1{
+    width: 25%;
+    height: 10%;
+}
+
 @media only screen and (max-width: 768px) {
 	.grid-container {
 		display: grid;
