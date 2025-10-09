@@ -10,8 +10,8 @@ body{
 }
 
 *{
-    margin: 10px;
-    padding: 1px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border : none;
@@ -23,30 +23,53 @@ div{
     font-size: 24px;
 }
 
-.Header, h4{
+h4{
     text-align: center;
     font-size: 60px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 25px;
 }
 
-button{
-    font-size: 25px;
+#HeadPort{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    transition: all 0.5s ease;
 }
 
-.profile_img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin: 25px;
-    padding: 100px;
-
+#HeadPort:hover{
+    color:#5bc0de;
+    transform: translateY(-2px);
+    transition: all 0.5s ease;
+    text-shadow: 0px 0px 15px #5bc0de;
 }
-  
-.profile_img #thanapt_profile{
-    width: 25%;
-    height: auto;
-    float: right;
-    border-radius: 25% 10%;
+
+
+#btnLink{
+    background-color: #1e1e1e;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid transparent;
+}
+
+#btnLink:hover{
+    background-color: #5bc0de;
+    color: black;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+    /* ดูวิธีการใช้งานจาก https://www.w3schools.com/css/css3_shadows_box.asp  */
+    transform: translateY(-2px);
+    /* วิธีการจาก https://www.w3schools.com/cssref/css3_pr_transform.php */
+    transition: all 0.5s ease;
+    /* วิธีการจาก https://www.w3schools.com/css/css3_transitions.asp */
+}
+
+#btnLink.active{
+    border-bottom: 3px solid #5bc0de;
+    color: #5bc0de;
 }
 
 #name{
@@ -55,17 +78,170 @@ button{
 
 h1{
     font-size: 32px;
+    text-align: left;
 }
 
 h2,h3{
     font-size: 24px;
+    text-align: left;
 }
 
 p{
     font-size: 16px;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 img{
     width: 10%;
     height: auto;
+}
+
+#logo{
+    height: 35px;
+    width: 35px;
+    border-radius: 50px 50px;
+    background-color:#1e1e1e;
+}
+
+#logo:hover{
+    background-color: #5bc0de;
+    transform: translateY(-2px);
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 15px #5bc0de;;
+}
+
+.grid-container {
+	display: grid;
+    grid-template-columns: 10% auto 20%;
+    grid-gap: 10px;
+}
+
+.grid-container > div{
+    text-align: center;
+    background-color: rgb(40, 40, 45);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.Header{
+	grid-column: 1 / span 3;
+    padding: 15px;
+    min-height: 100px;
+}
+
+.Profile_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / span 3;
+    height: auto;
+    margin: 25px;
+    padding: 100px;
+    min-height: 700px;
+    border-radius: 10px;
+}
+
+.Profile_img #thanapat_profile{
+    width: 25%;
+    height: auto;
+    float: right;
+    border-radius: 25% 10%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.212);
+    transition: all 0.5s ease-in-out;
+}
+
+#thanapat_profile:hover{
+    box-shadow: 0 0 20px rgb(71, 129, 165);
+    transform: translateY(-2px);
+    transition: all 0.5s ease-in;
+}
+
+.About_Me,p,h1,h2{
+    grid-column: 1 / span 3;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 25px;
+}
+
+.Contact,p{
+    grid-column: 1 / span 3;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 25px;
+}
+
+.Project{
+    grid-column: 1 /span 3;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+        grid-template-columns: 20% auto;
+        grid-gap: 10px;
+		  
+	}
+.Header{
+	grid-column: 1 / span 2;
+}
+
+.Profile_img{
+    grid-column: 1 / span 2;
+}
+.Profile_img #thanapt_profile {
+    width: auto;
+    margin-top: 20px;
+}
+
+.About_Me{
+    grid-column: 1 / span 2;
+}
+
+.Contact{
+    grid-column: 1 / span 2;
+}
+
+.Project{
+    grid-column: 1 /span 2;
+}
+}
+
+@media only screen and (max-width: 480px) {
+	.grid-container {
+		display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+
+	}
+.Header{
+	grid-column: 1 / span 1;
+}
+
+.Profile_img{
+    grid-column: 1 / span 1;
+    flex-direction: column;
+    text-align: center;
+}
+.Profile_img #thanapt_profile {
+    width: 60%;
+    margin-top: 40px;
+}
+
+.About_Me{
+    grid-column: 1 / span 1;
+}
+
+.Contact{
+    grid-column: 1 / span 1;
+}
+
+.Project{
+    grid-column: 1 /span 1;
+}
 }

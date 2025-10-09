@@ -1,0 +1,18 @@
+body{
+    background-color: antiquewhite;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: auto;
+}
+
+legend{
+    background-color: rgb(138, 113, 75);
+    color: aliceblue;
+    border:dashed black;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+fieldset{
+    border: dotted black;
+}

@@ -1,0 +1,89 @@
+body{
+    background-color: antiquewhite;
+    /* border: dashed; */
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(199, 113, 0);
+    filter: drop-shadow(0px 5px 2px);
+    opacity: 0.6;
+    font-style: oblique;
+    font-size: 45px;
+    background-color: rgb(236, 201, 176);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 2px #f3d2a7;
+}
+
+h2,h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: brown;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: rgb(228, 190, 145);
+    border: dashed;
+    border-radius: 20px 50px;
+    width: 300px;
+    height: 50px;
+    justify-content: center;
+    padding-left:25px;
+    margin: auto;
+    text-shadow: 2px 2px 2px #df986f;
+
+}
+
+.list{
+    list-style: square;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+a,.link{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;  
+    font-size: 20px;
+}
+
+a:link{
+    color: rgb(122, 122, 247);
+}
+
+a:hover{
+    color: rgb(243, 100, 5);
+}
+
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+#maibok{
+    float: right;
+}
+
+img{
+    width: 20%;
+    border: inset thick brown;
+    border-radius: 10%; 
+}
+
+.picture{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+.picture > img{
+    width: 400px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

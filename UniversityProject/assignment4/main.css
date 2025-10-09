@@ -1,0 +1,150 @@
+.grid-container {
+	display: grid;
+    grid-template-columns: 10% auto 20%;
+    grid-gap: 10px;
+}
+
+.grid-container > div{
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    background-color:rgb(235, 211, 147);
+}
+
+#header{
+	grid-column: 1 / span 3;
+	font-size: 48px;
+	font-weight: bolder;
+	font-style: italic;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-shadow: 2px 2px 2px #9b5d11;
+	color: rgb(194, 148, 105);
+	border: dashed;
+	padding: 1%;
+}
+
+div{
+	color: rgb(34, 34, 34);
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main1{
+	grid-column: 1 / span 1;
+}
+
+#main2{
+	grid-column: 2 / span 1;
+}
+
+#right{
+	grid-column: 3 / span 1;
+}
+
+#footer{
+	grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+        grid-template-columns: 20% auto;
+        grid-gap: 10px;
+		  
+	}
+
+#header{
+	grid-column: 1 / span 2;
+}
+
+#main1{
+	grid-column: 1 / span 1;
+}
+
+#main2{
+	grid-column: 2 / span 1;
+}
+
+#right{
+	grid-column: 1 / span 2;
+}
+
+#footer{
+	grid-column: 1 / span 2;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+	.grid-container {
+		display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+		
+	}
+#header{
+	grid-column: 1 / span 1;
+}
+
+#main1{
+	grid-column: 1 / span 1;
+}
+
+#main2{
+	grid-column: 1 / span 1;
+}
+
+#right{
+	grid-column: 1 / span 1;
+}
+
+#footer{
+	grid-column: 1 / span 1;
+}
+}
+
+body{
+	background-color: antiquewhite;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9{
+	border: inset thick rgb(139, 91, 27);
+    border-radius: 10%; 
+	width: 10%;
+}
+
+.picture{
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.picture > img{
+    width: 400px;
+    margin-left: 125px;
+    margin-bottom: 20px;
+}
+
+#image1{
+	width: 70%;
+}
+
+#image2{
+	width: 15%;
+}
+
+#head1, #head2, #head3{
+	text-align: center;
+	font-size: 24px;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+p{
+	background-color: aliceblue;
+	padding: 10px;
+	width: 200px;
+    height: 25px;
+	text-align: center;
+}
