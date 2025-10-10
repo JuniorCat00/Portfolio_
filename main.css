@@ -174,7 +174,7 @@ img{
 
 #thanapat_profile:hover{
     box-shadow: 0 0 20px rgb(71, 129, 165);
-    transform: scale(1.1) rotate(1deg);
+    transform: scale(1.005) rotate(1deg);
     transition: all 0.5s ease-in;
 }
 
